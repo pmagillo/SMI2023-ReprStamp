@@ -1,0 +1,62 @@
+This repository contains the code and instructions to create the images in Figures 11, 12, 14, 15 of the paper
+
+  "Crossing-free paths in the square grid"
+  Lidija Comic, Paola Magillo
+
+accepted for Solid Modeling International (SMI), Genova, Italy, July 2023 and to appear in Computers and Graphics
+
+===========================================
+This repository shares code with 
+https://github.com/pmagillo/PathChecker
+that is referred in the paper.
+
+==============================
+CREATION OF FIGURES 11, 12, 14
+
+Figures 11, 12, 14 contain images created with our demo program (https://github.com/pmagillo/PathChecker).
+That demo is interactive, but for the replicability test we have developed here a version that can be invoked from a script, without user interaction.
+
+ 
+
+The source code is in Java. 
+It needs the Java SE Development Kit which can be downloaded from
+http://www.oracle.com/
+We have tested it on a Windows system, but it should work equally on a Linux system, or any system where the Java SE Development Kit is installed.
+
+Instructions:
+- compile the java program: the needed commands are contained in the script  script_compile.bat
+- generate the images: the needed commands are contained in the script  script_fig.bat
+
+Note: since this program is a modification of the interactive demo, for a moment you will see the graphic window of the demo, that immediately disappears after saving the image.
+
+The generated images are:
+figure11_a.png  figure11_b.png  figure11_c.png
+figure12_a.png  figure12_b.png  figure12_c.png	figure12_d.png
+figure14_a.png  figure14_b.png  figure14_c.png
+which correspond to the various parts of Figures 11,12,14.
+
+The script generates just the raw images, in the paper we have manually superimposed letters and symbols used to explain the images in the caption.
+
+=====================
+CREATION OF FIGURE 15
+
+This figure contains two plots, that have been generated in two steps:
+
+1) A Python program generates the data and creates a MatLab program.
+2) Then MatLab, executing such program, will create an image with the plots.
+
+--Instructions for Step 1
+We executed the Python program on a native Linux system, where Python is installed as python3. From the terminal, type:
+
+  python3  creaFig_a.py
+
+this will create the file  creaFig_b.m  which is a MatLab program (a text file with extension .m containing MatLab commands).
+
+--Instructions for Step 2
+This step needs MatLab. We have run it on a Windows system, but it can be executed on any system where MatLab is installed.
+
+Intructions:
+open MatLab, load  creaFig_b.m  and run it. It will produce an image, and you need to manually save it.
+ 
+Note: Step 1 generates random data. Therefore the generated plots cannot be perfectly equal to the ones in Figure 15 of the paper, but they will be 
+very similar.
