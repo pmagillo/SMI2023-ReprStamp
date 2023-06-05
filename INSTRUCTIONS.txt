@@ -1,3 +1,5 @@
+*** THIS FILE REPLICATES THE INTRUCTIONS IN README.md ***
+
 This repository contains the code and instructions to create the images in Figures 11, 12, 14, 15 of the paper
 
   "Crossing-free paths in the square grid"
