@@ -17,9 +17,14 @@ That demo is interactive, but for the replicability test we have developed here 
 The source code is in Java. 
 It needs the Java SE Development Kit which can be downloaded from
 http://www.oracle.com/
+and the direct link for downloading is
+https://urlsand.esvalabs.com/?u=https%3A%2F%2Fwww.oracle.com%2Fjava%2Ftechnologies%2Fdownloads%2F%23jdk20-windows&e=ed7a584b&h=a2cec789&f=y&p=y 
 We have tested it on a Windows system, but it should work equally on a Linux system, or any system where the Java SE Development Kit is installed.
 
 Instructions:
+- before starting, you may need to set the classpath for Java:
+  if you are using the Windows Powershell, type: $env:CLASSPATH += ";."
+  if you are using the Command Prompt, type: set classpath=%classpath%;.
 - compile the java program: the needed commands are contained in the script  script_compile.bat
 - generate the images: the needed commands are contained in the script  script_fig.bat
 
